@@ -1,42 +1,77 @@
-@keyframes waves {
-    100% {
-        background-position: -100% 0;
+.loader {
+    position: absolute;
+    top:50%;
+    left:50%;
+    animation: whole 18s linear infinite;
+    transform:translate(-50%,-50%);
+    width:50px;
+    height:50px;
+  }
+  .bit {
+    position: absolute;
+    top:20px;
+    left:20px;
+    background:#C8321E;
+    border-radius:100px;
+    animation: dots 2.4s ease infinite;
+  }
+  .b1 {
+    animation-delay:-0s;
+  }
+  .b2 {
+    animation-delay:-0.2s;
+  }
+  .b3 {
+    animation-delay:-0.4s;
+  }
+  .b4 {
+    animation-delay:-0.6s;
+  }
+  .b5 {
+    animation-delay:-0.8s;
+  }
+  .b6 {
+    animation-delay:-1s;
+  }
+  .b7 {
+    animation-delay:-1.2s;
+  }
+  .b8 {
+    animation-delay:-1.4s;
+  }
+  .b9 {
+    animation-delay:-1.6s;
+  }
+  .b10 {
+    animation-delay:-1.8s;
+  }
+  .b11 {
+    animation-delay:-2.0s;
+  }
+  .b12 {
+    animation-delay:-2.2s;
+  }
+  @keyframes dots {
+    0%, 100% {
+      margin-top:15px;
+      margin-left:15px;
+      width:30px;
+      height:30px;
+      background:#c9d9e9;
+    }
+    50% {
+      margin-top:0px;
+      margin-left:0px;
+      width:60px;
+      height:60px;
+      background:#3a9fff;
     }
   }
-
-.loader{
-    width: calc((100% / 4) - 50px);
-    min-width: 290px;
-    height: 350px;
-    padding: 5px 5px;
-    margin: 10px 0;
-    border-radius: 4px;
-    overflow: hidden;
-    background: #fff;
-    .cover{
-        height: 200px;
-        background: #ececec;
+  @keyframes whole {
+    0% {
+      transform:translate(-50%,-50%) rotate(0deg);
     }
-    .info{
-        padding: 30px;
-        .square {
-            width: 80px;
-            height: 80px;
-            border-radius: 2px;
-            margin-bottom: 20px;
-            background: #ececec;
-        }
-        .line{
-            height: 30px;
-            background: #ececec;
-            border-radius: 2px;
-            margin-bottom: 20px;
-        }
+    100% {
+      transform:translate(-50%,-50%) rotate(-360deg);
     }
-    .cover, .square, .line {
-        background-image: linear-gradient(120deg, #ececec  50%, #fafafa 60%, #fafafa 61%, #ececec  70%);
-        background-size: 200%;
-        background-position: 100% 0;
-        animation: waves 2s linear infinite;
-    }
-  }  
+  }

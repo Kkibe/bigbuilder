@@ -1,11 +1,8 @@
-
-$lite:  #FFF;
+$lite: #fff;
 $dark: #3b3b3b;
 $light-blue: #ebf4fc;
+$dark-blue: #1f4568;//#0067b8
 $blue: #2196f3;
-$dark-blue: #1253a0;
-$red: #e43737;
-
 
 //newsletter section
 .newsletter{
@@ -15,46 +12,42 @@ $red: #e43737;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    margin: 5px 0px;
-    padding: 5px;
-
-    h1{
-        font-size: 20px;
-        font-weight: 400;
-    }
-
+    margin: 10px 0;
+    
     p{
         font-size: 15px;
     }
 
     form{
-        width: 300px;
+        width: 100%;
+        max-width: 340px;
         height: 40px;
         display: flex;
         align-items: center;
         justify-content: center;
-
+        
         input{
             height: inherit;
             outline: none;
-            font-size: 18px;
+            font-size: 16px;
+            padding: 0 5px;
             background: $lite;
             color: $dark;
             flex: 7;
             border: none;
-            background-color: $light-blue;
+            background: $light-blue;
         }
         
         button{
             flex: 3;
             height: 40px;
             border: none;
-            border: 1px solid $dark-blue;
+            border: 1px solid $blue;
             color: $lite;
-            background: $dark-blue;
+            background: $blue;
             cursor: pointer;
             &:hover{
-                color: $dark-blue;
+                color: $blue;
                 background: $light-blue;
             }
         }

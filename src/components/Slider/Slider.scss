@@ -1,9 +1,8 @@
-$lite:  #FFF;
+$lite: #fff;
 $dark: #3b3b3b;
 $light-blue: #ebf4fc;
+$dark-blue: #1f4568;//#0067b8
 $blue: #2196f3;
-$dark-blue: #1253a0;
-$red: #e43737;
 
 .slider{
     width: 100%;
@@ -13,25 +12,10 @@ $red: #e43737;
     justify-content: flex-start;
     position: relative;
     overflow: hidden;
-    background: $light-blue;
+    background: rgba(0, 0, 0, .03);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-
-    button{
-        width: 140px;
-        
-        padding: 8px;
-        border: 1px solid $dark-blue;
-        color: $lite;
-        background: $dark-blue;
-        cursor: pointer;
-        &:hover{
-            color: $dark-blue;
-            background: $lite;
-            
-        }
-    }
 
     .arrow{
         width: 50px;
@@ -45,7 +29,8 @@ $red: #e43737;
         bottom: 0;
         margin: auto;
         cursor: pointer;
-        z-index: 10;
+        z-index: 5;
+        background: $light-blue;
 
         &:first-of-type{
             left: 10px;
@@ -74,13 +59,13 @@ $red: #e43737;
             align-items: center;
             .image-container{
                 width: 150px;
+                height: 90%;
                 flex: 1;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 img{
-                    width: 70%;
-                    height: 60%;
+                    height: 100%;
                     object-fit: fill;
                     object-position: center;
                 }
@@ -96,9 +81,7 @@ $red: #e43737;
                 justify-content: space-evenly;
                 color: $dark;
 
-                h1{
-                    font-size: 40px;
-                }
+
                 
                 p{
                     margin: 30px 0px;
@@ -106,9 +89,11 @@ $red: #e43737;
                     font-weight: 500;
                     letter-spacing: 3px;
                 }
-                
-                button{
-                    font-size: 20px;
+            }
+
+            @media screen and (max-width: 480px) {
+                &{
+                    flex-direction: column;
                 }
             }
         }

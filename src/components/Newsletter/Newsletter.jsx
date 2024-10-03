@@ -5,9 +5,9 @@ import './Newsletter.scss';
 const Newsletter = () => {
     return (
         <div className='newsletter theme'>
-            <h1>
+            <h3>
                 SUBSCRIBE
-            </h1>
+            </h3>
             <p>
                 Subscribe to our news feeds, kindly fill the form below.
             </p>

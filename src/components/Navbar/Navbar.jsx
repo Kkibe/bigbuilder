@@ -1,26 +1,26 @@
-import Logo from '../../assets/icon.png';
+import Logo from '../../assets/logo.png';
 import './Navbar.scss';
 
 import { NavLink} from "react-router-dom";
 
 
 const Navbar = () => {
-  const handleChange = (active) => {
-    //return { color: active ? "#FFF" : "", backgroundColor: active ? "#1253a0" : ""}
-  }
     return (
-        <div className='navbar'>
-            
+        <header>
             <NavLink to="/" className='logo'>
                     <img src={Logo}/>
             </NavLink> 
-            <div className='navlinks'>
-                <NavLink to="/" className='link active' title='home' style={handleChange}>Home</NavLink>
-                <NavLink to="/deals" className='link' title='explore' style={handleChange}>Deals</NavLink>
-                <NavLink to="/blogs" className='link' title='posts' style={handleChange}>Blogs</NavLink>
-                <NavLink to="/contact" className='link' title='contact' style={handleChange}>Contact Us</NavLink>
+            <nav>
+                <NavLink to="/" title='home' >Home</NavLink>
+                <NavLink to="/services" title='explore' >Builder</NavLink>
+                <NavLink to="/news" title='explore' >News</NavLink>
+                <NavLink to="/about" title='contact' >About</NavLink>
+            </nav>
+            <div className="btn-container">
+                <a className="btn" href="/about#pricing">Pricing</a>
+                <a className="btn" href="register">Register</a>
             </div>
-        </div>
+        </header>
     );
 }
 

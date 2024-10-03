@@ -1,0 +1,51 @@
+$lite: #fff;
+$dark: #3b3b3b;
+$light-blue: #ebf4fc;
+$dark-blue: #1f4568;//#0067b8
+$blue: #2196f3;
+
+.article-pre__col {
+    padding: 10px 10px;
+    margin: 10px 0;
+  }
+  
+  .article-pre__img {
+    height: 0;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 55%;
+    border-radius: 6px;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+  }
+  
+  .article-pre__img--first {
+    background-image: url(https://cdn.dribbble.com/users/18730/screenshots/2182635/newshot.png);
+  }
+
+  
+  .article-pre{
+    text-decoration: none;
+  }
+  
+  
+  .article-pre:hover h4{
+    text-decoration: none;
+  }
+  
+  
+  .date {
+    float: right;
+  }
+  
+
+  .news-item{
+    h3{
+      span{
+        color: $blue;
+      }
+    }
+  }

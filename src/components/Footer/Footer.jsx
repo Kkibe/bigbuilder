@@ -18,30 +18,33 @@ const Footer = () => {
 
             <div className='section-wrapper theme'>
                 <section>
-                    <h2>Resources</h2>
+                    <h2>What's New</h2>
                     <div className='items-container theme'>
-                        <a href='/' title='home'>Home</a>
-                        <a href='/deals' title='services'>Cars</a>
-                        <a href='/blogs' title='blogs'>Blogs</a>
-                        <a href='/contact' title='help'>Contact Us</a>
+                        <a href='/contact' title='help'>Video Editor</a>
+                        <a href='#' title='help'>Canvas Drawer</a>
+                        <a href='#' title='services'>Photo Editor</a>
+                        <a href='#' title='store'>CV & Resume Builder</a>
+                        <a href='#' title='store'>Logo Maker</a>
                     </div>
                 </section>
-
+                
                 <section>
-                    <h2>Featured</h2>
+                    <h2>Company</h2>
                     <div className='items-container theme'>
-                        <a href='#' title='help'>Mazda</a>
-                        <a href='#' title='services'>Toyota</a>
-                        <a href='#' title='store'>Peugeot</a>
+                        <a href='#' title='help'>Our Team</a>
+                        <a href='#' title='services'>Careers</a>
+                        <a href='#' title='store'>About Bigbuilder</a>
+                        <a href='#' title='store'>Our News</a>
+                        <a href='#' title='store'>Contact Us</a>
                     </div>
                 </section>
             </div>
             <hr />
             <div className='footer-bottom theme'>
-                <p>&copy; Bigbutton 2022</p>
-                <a title='privacy'>Privacy & cookies</a>
+                <p>&copy; Bigbuilder {new Date().getFullYear()}</p>
+                <a title='privacy'>Privacy policy</a>
                 <a title='terms'>Terms of use</a>
-                <a title='help'> Help</a>
+                <a title='help'>FAQ</a>
             </div>
         </div>
     );

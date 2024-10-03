@@ -2,30 +2,30 @@ import { ArrowLeftOutlined, ArrowRightOutlined  } from '@mui/icons-material';
 import {useState} from 'react';
 import './Slider.scss'
 //slides
-import TTA from '../../assets/TTA.png';
-import TY from "../../assets/TY.png";
-import Lc300 from "../../assets/lc300.png";
+import ImageEditor from '../../assets/camera-viewfinder.png';
+import CvBuilder from '../../assets/cv.png';
+import NoteEditor from '../../assets/note-medical.png';
 
 const slides = [
     {
         id: 1,
-        img: TTA,
-        title: "Toyota Land Cruiser",
+        img: ImageEditor,
+        title: "AI Image Editor",
         description: "Land Cruiser 2023 Verdict ZX Diesel",
         link: ""
     },
     {
         id: 2,
-        img: TY,
-        title: "DEVEDITOR",
-        description: "A free full-featured online code editor for HTML, CSS and JAVASCRIPT.",
+        img: CvBuilder,
+        title: "Resume & CV Builder",
+        description: "Find out more about our custom resume and cv builder",
         link: ""
     },
     {
         id: 3,
-        img: Lc300,
-        title: "Lc300",
-        description: "Share Your Files and Images Across Your Browser Safely",
+        img: NoteEditor,
+        title: "Custom Note Editor",
+        description: "Edit your notes and download as PDF files.",
         link: ""
     }
     
@@ -58,7 +58,7 @@ export default function Slider() {
                             <div className="info">
                                 <h1>{slide.title}</h1>
                                 <p>{slide.description}</p>
-                               <button>BUY NOW</button>
+                               <a className='btn'>BUY NOW</a>
                             </div>
                         </div>
                     )

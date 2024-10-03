@@ -1,9 +1,8 @@
-$lite:  #FFF;
+$lite: #fff;
 $dark: #3b3b3b;
 $light-blue: #ebf4fc;
+$dark-blue: #1f4568;//#0067b8
 $blue: #2196f3;
-$dark-blue: #1253a0;
-$red: #e43737;
     
 .topbar{
     width: 100%;
@@ -22,7 +21,7 @@ $red: #e43737;
             color: $lite;
             padding: 2px;    
             &:hover{
-                color: $dark-blue;
+                color: $blue;
                 background: $lite; 
             }
         }
